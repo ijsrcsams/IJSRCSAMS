@@ -1,9 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-}
-h1 {
-    color: #0056b3;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    // This script can be used for any interactive elements.
+    // For now, let's just add a simple log to confirm it's loaded.
+    console.log('IJCS Mimic page loaded successfully!');
+
+    // Example of a simple interactive element:
+    // If you had a button with an ID 'myButton', you could do:
+    // const myButton = document.getElementById('myButton');
+    // if (myButton) {
+    //     myButton.addEventListener('click', () => {
+    //         alert('Button clicked!');
+    //     });
+    // }
+
+    // You could also add JavaScript to dynamically load content,
+    // though that would require a data source (e.g., JSON, API).
+});
