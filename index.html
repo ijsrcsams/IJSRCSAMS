@@ -22,7 +22,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             position: relative; /* Ensure text content is not directly under the image */
-            padding-top: 200px; /* Increased padding to push content below the larger logo */
+            padding-top: 200px; /* Padding to push content below the logos */
         }
         h1, h2, h3 {
             color: #0056b3;
@@ -41,13 +41,18 @@
         a:hover {
             text-decoration: underline;
         }
-        .logo {
+        .logo { /* Base style for both logos */
             position: absolute;
-            top: 10px; /* Adjusted to keep it visually balanced with the larger size */
-            left: 10px; /* Adjusted to keep it visually balanced with the larger size */
             width: 300px; /* Tripled from original 100px */
             height: auto; /* Maintain aspect ratio */
             z-index: 100; /* Ensure it stays on top of other content */
+            top: 10px; /* Common top positioning */
+        }
+        .logo-left {
+            left: 10px; /* Positioning for left logo */
+        }
+        .logo-right {
+            right: 10px; /* Positioning for right logo */
         }
 
         /* Adjustments for the main heading to prevent collision with logo */
@@ -59,20 +64,26 @@
         /* Responsive adjustments for smaller screens if needed */
         @media (max-width: 768px) {
             .container {
-                padding-top: 150px; /* Adjust padding for smaller screens as logo is still large */
+                padding-top: 150px; /* Adjust padding for smaller screens as logos are still large */
                 margin: 10px auto;
                 padding: 15px;
             }
-            .logo {
-                width: 200px; /* Smaller logo on smaller screens, but still larger than previous */
+            .logo { /* Common adjustments for smaller screens */
+                width: 200px; /* Smaller logos on smaller screens, but still larger than previous */
                 top: 10px;
+            }
+            .logo-left {
                 left: 10px;
+            }
+            .logo-right {
+                right: 10px;
             }
         }
     </style>
 </head>
 <body>
-    <img src="ijsrcsams.jpg" alt="IJSRCSAMS Logo" class="logo">
+    <img src="ijsrcsams.jpg" alt="IJSRCSAMS Left Logo" class="logo logo-left">
+    <img src="ijsrcsams.jpg" alt="IJSRCSAMS Right Logo" class="logo logo-right">
 
     <div class="container">
         <h1>International Journal of Scientific Research in Computer Science Applications and Management Studies(IJSRCSAMS)</h1>
