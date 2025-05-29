@@ -22,7 +22,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             position: relative; /* Ensure text content is not directly under the image */
-            padding-top: 100px; /* Add padding to push content below the logo */
+            padding-top: 150px; /* Increased padding to push content below the larger logo */
         }
         h1, h2, h3 {
             color: #0056b3;
@@ -43,9 +43,9 @@
         }
         .logo {
             position: absolute;
-            top: 20px; /* Distance from the top of the body/viewport */
-            left: 20px; /* Distance from the left of the body/viewport */
-            width: 100px; /* Adjust size as needed */
+            top: 15px; /* Adjusted to keep it visually balanced with the larger size */
+            left: 15px; /* Adjusted to keep it visually balanced with the larger size */
+            width: 200px; /* Doubled from 100px */
             height: auto; /* Maintain aspect ratio */
             z-index: 100; /* Ensure it stays on top of other content */
         }
@@ -59,14 +59,14 @@
         /* Responsive adjustments for smaller screens if needed */
         @media (max-width: 768px) {
             .container {
-                padding-top: 150px; /* Adjust padding for smaller screens if logo is smaller */
+                padding-top: 120px; /* Adjust padding for smaller screens as logo is still large */
                 margin: 10px auto;
                 padding: 15px;
             }
             .logo {
-                width: 150px; /* Smaller logo on smaller screens */
-                top: 20px;
-                left: 20px;
+                width: 150px; /* Slightly smaller logo on smaller screens, but still larger than original */
+                top: 10px;
+                left: 10px;
             }
         }
     </style>
